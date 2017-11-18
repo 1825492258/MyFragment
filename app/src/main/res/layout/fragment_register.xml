@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@drawable/bg_src_tianjin"
+    tools:context="com.item.fragment.ment.LoginFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bg_gradient_black"
+        android:paddingTop="40dp"
+        app:title="欢迎您"
+        app:titleTextAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_bg_input"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_phone"
+                android:tint="@color/colorPrimary" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/label_phone"
+                android:inputType="phone"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textSecond"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="2dp"
+            android:background="#20000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_key"
+                android:tint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:background="@null"
+                android:hint="@string/label_password"
+                android:inputType="textPassword"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textSecond"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="2dp"
+            android:background="#20000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_person"
+                android:tint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/label_name"
+                android:inputType="text"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/textSecond"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/txt_go_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@string/label_go_login"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_direction_right"
+            android:tint="#FFFFFF" />
+    </FrameLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp">
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="172dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sel_btn_bg_black_alpha_44"
+            android:text="@string/label_register"
+            android:textColor="#FFFFFF" />
+    </FrameLayout>
+</LinearLayout>
