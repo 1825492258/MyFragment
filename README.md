@@ -142,8 +142,7 @@ LazyFragment Activity和Fragment的交互
        </selector>
 
 ### EditText编辑时希望出现的一个左侧光标的实现
-
-    android:textCursorDrawable="@drawable/ic_cursor"
+   android:textCursorDrawable="@drawable/ic_cursor"
    <shape xmlns:android="http://schemas.android.com/apk/res/android"
        android:shape="rectangle">
        <size android:width="2dp" />
