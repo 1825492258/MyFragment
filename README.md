@@ -6,7 +6,7 @@ LazyFragment Activity和Fragment的交互
     ICONS      https://material.io/icons/
     阿里图库    http://www.iconfont.cn/
 
-###Fragment的懒加载处理
+### Fragment的懒加载处理
     如下是BaseLazyFragment的主要代码
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
@@ -38,7 +38,8 @@ LazyFragment Activity和Fragment的交互
     }
 
     /**
-     * when fragment is visible for the first time, here we can do some initialized work or refresh data only once
+     * when fragment is visible for the first time, here we can do some initialized work
+     * or refresh data only once
      */
     protected abstract void onFirstUserVisible();
 
@@ -117,6 +118,7 @@ LazyFragment Activity和Fragment的交互
         mTrigger = (IOneTrigger) context;
     }
 ### 实现Button 点击的效果的图片
+
    <?xml version="1.0" encoding="utf-8"?>
    <selector xmlns:android="http://schemas.android.com/apk/res/android">
        <item android:state_enabled="false">
@@ -138,7 +140,8 @@ LazyFragment Activity和Fragment的交互
            </shape>
        </item>
    </selector>
-### EditText 编辑时希望出现的一个左侧光标的实现
+
+### EditText编辑时希望出现的一个左侧光标的实现
    android:textCursorDrawable="@drawable/ic_cursor"
    <?xml version="1.0" encoding="utf-8"?>
    <shape xmlns:android="http://schemas.android.com/apk/res/android"
