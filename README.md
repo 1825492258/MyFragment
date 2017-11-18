@@ -118,3 +118,25 @@ LazyFragment Activity和Fragment的交互
         mTrigger = (IOneTrigger) context;
         }
 
+### 实现Button 点击的效果的图片
+    <?xml version="1.0" encoding="utf-8"?>
+       <selector xmlns:android="http://schemas.android.com/apk/res/android">
+           <item android:state_enabled="false">
+               <shape android:shape="rectangle">
+                   <corners android:radius="22dp" />
+                   <solid android:color="#00000000" />
+               </shape>
+           </item>
+           <item android:state_pressed="true">
+               <shape android:shape="rectangle">
+                   <corners android:radius="22dp" />
+                   <solid android:color="#00000000" />
+               </shape>
+           </item>
+           <item>
+               <shape android:shape="rectangle">
+                   <corners android:radius="22dp" />
+                   <solid android:color="#70000000" />
+               </shape>
+           </item>
+       </selector>
