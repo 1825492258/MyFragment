@@ -116,38 +116,5 @@ LazyFragment Activity和Fragment的交互
         super.onAttach(context);
         // 拿到我们的Activity的引用
         mTrigger = (IOneTrigger) context;
-    }
-### 实现Button 点击的效果的图片
-
-   <?xml version="1.0" encoding="utf-8"?>
-   <selector xmlns:android="http://schemas.android.com/apk/res/android">
-       <item android:state_enabled="false">
-           <shape android:shape="rectangle">
-               <corners android:radius="22dp" />
-               <solid android:color="#00000000" />
-           </shape>
-       </item>
-       <item android:state_pressed="true">
-           <shape android:shape="rectangle">
-               <corners android:radius="22dp" />
-               <solid android:color="#00000000" />
-           </shape>
-       </item>
-       <item>
-           <shape android:shape="rectangle">
-               <corners android:radius="22dp" />
-               <solid android:color="#70000000" />
-           </shape>
-       </item>
-   </selector>
-
-### EditText编辑时希望出现的一个左侧光标的实现
-   android:textCursorDrawable="@drawable/ic_cursor"
-   <?xml version="1.0" encoding="utf-8"?>
-   <shape xmlns:android="http://schemas.android.com/apk/res/android"
-       android:shape="rectangle">
-       <size android:width="2dp" />
-       <corners android:radius="0.5dp" />
-       <solid android:color="@color/colorAccent" />
-   </shape>
+        }
 
